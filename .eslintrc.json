@@ -4,6 +4,9 @@
         "es2021": true
     },
     "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "plugin:import/recommended"
     ],
@@ -15,7 +18,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react", "prettier", "import"
+        "react", "prettier", "import", "@typescript-eslint"
     ],
     "rules": {
       "semi": 0,
