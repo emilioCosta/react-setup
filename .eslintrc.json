@@ -5,7 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "plugin:import/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,12 +15,19 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react", "prettier"
+        "react", "prettier", "import"
     ],
     "rules": {
       "semi": 0,
       "comma-dangle": 0,
       "prettier/prettier": "error",
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
     }
 }
