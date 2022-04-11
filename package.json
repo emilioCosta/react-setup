@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "typescript": "tsc --project tsconfig.json --noEmit",
     "lint": "eslint src --color",
-    "prettier": "prettier src -check",
+    "prettier": "prettier src --check",
     "lint-staged": "lint-staged lint-staged.config.js",
     "husky-install": "husky install"
   },
